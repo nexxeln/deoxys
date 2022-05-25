@@ -117,9 +117,7 @@ const CreateLink = () => {
           type="url"
           value={form.url}
           maxLength={3000}
-          onChange={(e) =>
-            setForm({ ...form, url: e.target.value.toLowerCase() })
-          }
+          onChange={(e) => setForm({ ...form, url: e.target.value })}
           placeholder="https://google.com"
           className="block w-full px-4 py-2 font-normal bg-black border-2 border-gray-200 rounded-md focus:outline-none placeholder:text-gray-400"
           required
