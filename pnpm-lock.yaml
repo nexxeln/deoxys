@@ -10,6 +10,7 @@ specifiers:
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.4
   autoprefixer: ^10.4.7
+  copy-to-clipboard: ^3.3.1
   eslint: 8.15.0
   eslint-config-next: 12.1.6
   next: 12.1.6
@@ -29,6 +30,7 @@ dependencies:
   '@trpc/next': 9.23.6_xngnh72t3ynu7hhwulpja2c5vq
   '@trpc/react': 9.23.6_h3snv5ddosaop72uxqotb557xm
   '@trpc/server': 9.23.6
+  copy-to-clipboard: 3.3.1
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   prisma: 3.14.0
   random-word-slugs: 0.1.6
@@ -656,6 +658,12 @@ packages:
 
   /concat-map/0.0.1:
     resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+
+  /copy-to-clipboard/3.3.1:
+    resolution: {integrity: sha512-i13qo6kIHTTpCm8/Wup+0b1mVWETvu2kIMzKoK8FpkLkFxlt0znUAHcMzox+T8sPlqtZXq3CulEjQHsYiGFJUw==}
+    dependencies:
+      toggle-selection: 1.0.6
+    dev: false
 
   /core-js-pure/3.22.7:
     resolution: {integrity: sha512-wTriFxiZI+C8msGeh7fJcbC/a0V8fdInN1oS2eK79DMBGs8iIJiXhtFJCiT3rBa8w6zroHWW3p8ArlujZ/Mz+w==}
@@ -2180,6 +2188,10 @@ packages:
     dependencies:
       is-number: 7.0.0
     dev: true
+
+  /toggle-selection/1.0.6:
+    resolution: {integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=}
+    dev: false
 
   /tsconfig-paths/3.14.1:
     resolution: {integrity: sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==}
