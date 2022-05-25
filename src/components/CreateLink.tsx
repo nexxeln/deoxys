@@ -24,11 +24,11 @@ const CreateLink = () => {
 
   if (createShortLink.status === "success") {
     return (
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mx-3">
         <span className="pb-3 text-lg font-semibold">Here's your link!</span>
 
-        <div className="flex items-center">
-          <h1 className="text-2xl text-center">{`${url}/${form.slug}`}</h1>
+        <div className="flex items-center gap-2">
+          <h1 className="text-lg text-center md:text-2xl">{`${url}/${form.slug}`}</h1>
           <button
             className="px-4 py-1.5 ml-3 font-medium transition-colors duration-300 bg-indigo-500 border-2 border-indigo-500 rounded hover:bg-transparent"
             onClick={() => {
