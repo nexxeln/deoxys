@@ -1,5 +1,11 @@
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Head from "next/head";
+import { Suspense } from "react";
+
+const CreateLink = dynamic(() => import("../components/CreateLink"), {
+  ssr: false,
+});
 
 const Home: NextPage = () => {
   return (
@@ -9,8 +15,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex flex-col items-center justify-center min-h-screen mx-auto bg-black">
-        <h1 className="text-6xl font-bold text-gray-100 uppercase">deoxys</h1>
+      <div className="flex flex-col items-center justify-center min-h-screen mx-auto text-gray-100 bg-black">
+        <div className="md:w-1/2">
+          <Suspense>
+            <h1 className="my-6 text-6xl font-bold text-center uppercase">
+              deoxys
+            </h1>
+            <CreateLink />
+          </Suspense>
+        </div>
       </div>
     </>
   );
