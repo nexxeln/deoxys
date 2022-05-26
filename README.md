@@ -13,4 +13,4 @@ Deoxys uses the [t3-stack](https://init.tips).
 - tRPC
 - PlanetScale
 
-Project bootstrapped using [`create-t3-app`](https://www.npmjs.com/package/create-t3-app). Yes I know I misspelled it in the commit. 
+This project bootstrapped using [`create-t3-app`](https://www.npmjs.com/package/create-t3-app). Yes I know I misspelled it in the commit.
