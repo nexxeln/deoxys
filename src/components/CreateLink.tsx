@@ -24,7 +24,7 @@ const CreateLink = () => {
 
   if (createShortLink.status === "success") {
     return (
-      <div className="flex flex-col items-center justify-center mx-3">
+      <div className="flex flex-col items-center justify-center mx-3 mt-6">
         <span className="pb-3 text-lg font-semibold">Here's your link!</span>
 
         <div className="flex items-center gap-2">
@@ -58,6 +58,7 @@ const CreateLink = () => {
         event.preventDefault();
         createShortLink.mutate({ ...form });
       }}
+      className="mt-6"
     >
       {checkSlug.data?.used ? (
         <span className="font-medium text-center text-red-500">

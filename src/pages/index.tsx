@@ -18,9 +18,10 @@ const Home: NextPage = () => {
       <div className="flex flex-col items-center justify-center min-h-screen mx-auto text-gray-100 bg-black">
         <div className="md:w-1/2">
           <Suspense>
-            <h1 className="my-6 text-6xl font-bold text-center uppercase">
+            <h1 className="text-6xl font-bold text-center uppercase">
               deoxys
             </h1>
+            <p className="text-center capitalize pt-1 text-md">a fast link shortener</p>
             <CreateLink />
           </Suspense>
         </div>
