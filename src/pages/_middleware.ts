@@ -1,6 +1,6 @@
 import { NextFetchEvent, NextRequest, NextResponse } from "next/server";
 
-export async function middleware(req: NextRequest, ev: NextFetchEvent) {
+export async function middleware(req: NextRequest, event: NextFetchEvent) {
   if (
     req.nextUrl.pathname.startsWith("/api/") ||
     req.nextUrl.pathname === "/"
