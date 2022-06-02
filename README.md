@@ -4,6 +4,12 @@
 
 Deoxys is a fast and optimized link shortener. Visit the website [here](https://deoxys.nexxel.dev).
 
+### Credits
+
+- [Theo](https://www.youtube.com/c/TheoBrowne1017)
+- [Christian](https://github.com/heyglassy)
+- [Joltik](https://github.com/TheoBr/joltik)
+
 ### Stack
 Deoxys uses the [t3-stack](https://init.tips).
 
